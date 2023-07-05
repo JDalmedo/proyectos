@@ -1,0 +1,107 @@
+:root{
+    --primary: #dfe4e3;
+    --secondary: #0d0d0d;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body {
+    background-color: var(--primary);
+    color: var(--secondary);
+    background-image: url(./assets\img\background.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 900vh;
+
+}
+nav > ul {
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+li {
+    list-style-type: none;
+}
+nav img{
+    height: 40px;
+    width: auto;
+}
+a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+button {
+    border: 2px solid var(--secondary);
+    padding: 5px 10px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 550;
+    transition: 0.5s ease-in-out;
+}
+button:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+.button-active {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+header > img {
+    width: 400px;
+}
+header > h1 {
+    text-transform: uppercase;
+}
+header > h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+header > p {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+header .social img {
+    height: 30px;
+    width: auto;
+    filter: invert(80%);
+}
+header ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main > h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px;
+}
+main > ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    gap: 20px;
+}
+main > ul > li {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+main img{
+    width: 100%;
+}
